@@ -1,9 +1,9 @@
 import { Module } from '@nestjs/common';
-import { GmtController } from './gmt/gmt.controller';
-import { GmtService } from './gmt/gmt.service';
+import { GmtController } from './gmt.controller';
+import { GmtService } from './gmt.service';
 
 @Module({
   controllers: [GmtController],
-  providers: [GmtService]
+  providers: [GmtService],
 })
 export class GmtModule {}
